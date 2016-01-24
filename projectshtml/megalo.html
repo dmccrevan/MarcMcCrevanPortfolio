@@ -1,0 +1,130 @@
+<!--
+Author Information   
+Name: Daniel McCrevan
+Email: danielmccrevan@gmail.com
+Website: https://github.com/dmccrevan
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Marc McCrevan's portfolio website">
+    <meta name="author" content="Daniel McCrevan">
+
+    <title>Marc McCrevan</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- fancybox -->
+    <link href="../css/jquery.fancybox.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="../gallery.html">
+                    <i class="fa fa-arrow-left"></i>  <span class="light">Back</span>
+                </a>
+            </div>
+        <!-- /.container -->
+    </nav>
+
+    <section class="content-section text-center">
+        <div class="container">
+        <h2>Megalomalady</h2>
+        <div class="col-md-10 col-centered topbuffer-lg">
+                <p>
+                As a student artist and developer, I was able to work on a team under MassDigi, a team comprised of students from both Becker College, and the Rhode Island School of Design. Together, we worked on and are on the verge of publishing Megalomalady, a fun mobile game that will be released on the IOS store.
+                </p>
+                <br>
+                <p>
+                Along with that, we were more recently contracted by a company called Earth Echo to make a re-skinned version of Megalomalady, which will be more geared towards an environmentally aware focus, so our fan base can have fun, while acknowledging the serious message behind our game.
+                </p>
+                <br>
+                <p>
+                I worked under the Art Director, as both an icon concept artist, and as an icon game asset artist. More or less, I was both the creative mind, and the artist that produced and executed some of the icons in both Megalomalady, and our Earth Echo re-skin. Here are examples of those icons below!
+                </p>
+            </div>
+            <div class="row topbuffer-lg">
+                <div class="col-md-2"></div>
+                <div class="col-md-4"><a class="fancybox" href="../img/Art/Massdigi/3.png" data-caption="Megalomalady / reskinned icons"><img src="../img/Art/Massdigi/3.png" class="dydimen-sm fade sidebuffer"></a></div>
+                <div class="col-md-4"><a class="fancybox" href="../img/Art/Massdigi/1.png" data-caption="Reskinned megalo icons"><img src="../img/Art/Massdigi/1.png" class="dydimen-sm sidebuffer fade"></a></div>
+                <div class="col-md-2 sidebuffer"></div>
+            </div>
+            <div class="row topbuffer-lg">
+                <div class="col-md-2"></div>
+                <div class="col-md-4"><a class="fancybox" href="../img/Art/Massdigi/2.png" data-caption="Reskinned megalo icons"><img src="../img/Art/Massdigi/2.png" class="dydimen-sm sidebuffer fade"></a></div>
+                <div class="col-md-4"><a class="fancybox" href="../img/Art/Massdigi/4.png" data-caption="Reskinned megalo icons"><img src="../img/Art/Massdigi/4.png" class="dydimen-sm sidebuffer fade"></a></div>
+                <div class="col-md-2 sidebuffer"></div>
+            </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <hr color="white">
+            <p>Copyright &copy; Marc McCrevan 2016</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../js/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../js/grayscale.js"></script>
+
+     <!-- fancybox JavaScript -->
+    <script src="../js/jquery.fancybox.pack.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".fancybox").fancybox({
+                beforeShow : function(){
+                    this.title =  $(this.element).data("caption");
+                },
+                helpers: {
+                    overlay: {
+                      locked: false
+                    }
+                 }
+            });
+        });
+      </script>
+</body>
+
+</html>
